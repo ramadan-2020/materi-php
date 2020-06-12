@@ -2,8 +2,9 @@
 <html>
 sc : <a href="https://play.google.com/store/apps/details?id=com.sukronmoh.bwi.belajarhtml&hl=in"target="_blank">buku pemrograman</a><br>
 @syahrul_w
-<head>
-		<title>Materi PHP</title>
+
+	<head>
+		<title> Materi PHP</title>
 	</head>
 	<body>
 	<h1> Mohon Maaf Berantakan Gak Ada Waktu </h1>
