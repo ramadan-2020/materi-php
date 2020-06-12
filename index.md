@@ -1,5 +1,5 @@
 <html>
-sc : <a href="https://play.google.com/store/apps/details?id=com.sukronmoh.bwi.belajarhtml&hl=in">buku pemrograman</a><br>
+sc : <a href="https://play.google.com/store/apps/details?id=com.sukronmoh.bwi.belajarhtml&hl=in"target="_blank">buku pemrograman</a><br>
 	<head>
 		<title>Materi PHP</title>
 	</head>
