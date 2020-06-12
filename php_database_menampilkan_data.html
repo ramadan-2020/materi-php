@@ -1,0 +1,56 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+<p>
+Sekarang kita akan belajar mengambil data dari tabel database dan menampilkannya di halaman web kita.
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+<br>
+// KODE PRAKTIK SEBELUMNYA<br>
+// kode connection<br>
+// kode create database<br>
+// kode select database<br>
+// kode create tabel<br>
+// kode insert data<br>
+<br>
+// menampilkan data<br>
+$sql = "SELECT * FROM tbl_pegawai";<br>
+$result = mysqli_query($conn, $sql);<br>
+<br>
+echo '&lt;table border="1"&gt;';<br>
+echo '&lt;tr&gt;';<br>
+echo '&lt;td&gt;ID&lt;/td&gt;';<br>
+echo '&lt;td&gt;NAMA&lt;/td&gt;';<br>
+echo '&lt;td&gt;ALAMAT&lt;/td&gt;';<br>
+echo '&lt;/tr&gt;';<br>
+<br>
+while($row = mysqli_fetch_array($result)) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;echo '&lt;tr&gt;';<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;echo '&lt;td&gt;'.$row['id'].'&lt;/td&gt;';<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;echo '&lt;td&gt;'.$row['nama'].'&lt;/td&gt;';<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;echo '&lt;td&gt;'.$row['alamat'].'&lt;/td&gt;';<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;echo '&lt;/tr&gt;';<br>
+}<br>
+<br>
+echo '&lt;/table&gt;';<br>
+<br>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/database_5.jpeg" width="100%" /><br>
+<br>
+<p>
+Kenapa datanya double?<br>ya, karena kode kita ditulis dalam satu file. Jadi tiap kali di load maka akan mengeksekusi dari awal hingga akhir baris kode. mulai KONEKSI, CREATE DATABASE, SELECT DATABASE, CREATE TABLE, INPUT DATA, hingga TAMPILKAN DATA.<br><br>
+    Coba di back, terus dibuka lagi, pasti nambah datanya. wkwkwk
+</p>
+<p>
+    Pada tutorial selanjutnya akan kami berikan contoh web yang menggunakan database. Ditunggu ya update selanjutnya ....
+</p>
+<p>
+    Selamat belajar, :)
+</p>
+<br>
+<br>

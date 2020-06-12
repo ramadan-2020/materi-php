@@ -1,0 +1,110 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+Condition dalam PHP bisa menggunakan:<br>
+- if<br>
+- if .. else<br>
+- if .. else if ... else<br>
+- switch<br>
+<br>
+<br>
+<b>IF</b><br>
+Digunakan untuk pilihan satu kondisi
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$harga = 3000;<br>
+<br>
+if($harga &lt; 5000){<br>
+echo "Saya beli";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_condition_1.png" width="100%" /><br>
+<br>
+<br>
+<b>IF ... ELSE</b><br>
+Digunakan untuk dua pilihan, ya atau tidak.
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$harga = 3000;<br>
+<br>
+if($harga &lt; 5000){<br>
+echo "Saya beli";<br>
+}else{<br>
+echo "Tidak saya beli";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_condition_2.png" width="100%" /><br>
+<br>
+Keterangan:<br>
+Cobalah mengubah-ubah nilai harga<br>
+<br>
+<br>
+<b>IF ... ELSE IF ... ELSE</b><br>
+Digunakan untuk beberapa pilihan.
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$harga = 3000;<br>
+<br>
+if($harga &gt; 5000){<br>
+echo "Tidak saya beli";<br>
+}else if($harga &gt; 2000){<br>
+echo "Saya tawar";<br>
+}else{<br>
+echo "Saya beli";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_condition_3.png" width="100%" /><br>
+<br>
+Keterangan:<br>
+Cobalah mengubah-ubah nilai harga<br>
+<br>
+<br>
+<b>SWITCH</b><br>
+Digunakan untuk beberapa pilihan.
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$harga = 3000;<br>
+<br>
+switch($harga){<br>
+case ($harga &gt; 5000):<br>
+echo "Tidak saya beli";<br>
+break;<br>
+case ($harga &gt; 2000):<br>
+echo "Saya tawar";<br>
+break;<br>
+default:<br>
+echo "Saya beli";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_condition_4.png" width="100%" /><br>
+<br>
+Keterangan:<br>
+Cobalah mengubah-ubah nilai harga<br>
+<br>

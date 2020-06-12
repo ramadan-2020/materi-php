@@ -1,0 +1,91 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+Loop atau pengulangan dalam PHP bisa menggunakan code berikut:<br>
+- While<br>
+- Do ... While<br>
+- For<br>
+- Foreach<br>
+<br>
+<b>While</b><br>
+Pengulangan while digunakan jika kita tidak tau pasti berapa kali pengulangan untuk mendapatkan kondisi true.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = 1;<br>
+<br>
+while(21 % $x != 5){<br>
+	echo "sisa bagi 21 oleh ".$x." tidak sama dengan 5 &lt;br&gt;";<br>
+	$x++;<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_loop_1.png" width="100%" /><br>
+Keterangan:<br>
+Proses akan terus berjalan sampai menemukan hasil 21 % $x = 5<br>
+<br>
+<br>
+<b>Do .. While</b><br>
+Pengulangan dengan do ... while digunakan jika kita tidak tau pasti berapa kali pengulangan untuk mendapatkan kondisi true dan <b>selalu menjalankan kondisi pertama</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = 1;<br>
+<br>
+do{<br>
+	echo "nilai x mulai 2 hingga 10 adalah ".$x." &lt;br&gt;";<br>
+	$x++;<br>
+}while( $x &gt;= 2 &amp;&amp; $x&lt;=10);<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_loop_2.png" width="100%" /><br>
+Keterangan:<br>
+1 lebih kecil dari 2, tetapi tetap masuk dalam pengulangan. Karena x = 1 merupakan kondisi pertama dan akan selalu dijalankan.<br>
+<br>
+<br>
+<b>For</b><br>
+Pengulangan for digunakan jika kita sudah tau pasti batas-batas pengulangannya.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+for($x=1; $x&lt;10; $x++){<br>
+	echo "x = ".$x." &lt;br&gt;";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_loop_3.png" width="100%" /><br>
+<br>
+<br>
+<b>Foreach</b><br>
+Pengulangan untuk array.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$colors = array("red", "green", "blue", "yellow");<br>
+<br>
+foreach ($colors as $value) {<br>
+    echo "$value &lt;br&gt;";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_loop_4.png" width="100%" /><br>
+<br>

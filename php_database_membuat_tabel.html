@@ -1,0 +1,40 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+<p>
+Pada tutorial kali ini akan kita bahas cara membuat tabel di database dengan php.
+</p>
+<p>
+Masih menggunakan kode sebelumnya, jadi sebelum mempraktikkan tutorial ini, silahkan copy dulu kodingan sebelumnya mengenai koneksi, create database dan memilih database yang digunakan.
+</p>
+<p>
+Kalau sudah, kita mulai menulis kode untuk membuat tabelnya.
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+<br>
+// KODE PRAKTIK SEBELUMNYA<br>
+// kode connection<br>
+// kode create database<br>
+// kode select database<br>
+<br>
+// buat tabel<br>
+$sql = "CREATE TABLE IF NOT EXISTS tbl_pegawai (id INT NOT NULL AUTO_INCREMENT, nama VARCHAR(30), alamat VARCHAR(50), primary key (id))";<br>
+if (mysqli_query($conn, $sql)) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "sukses create tabel";<br>
+} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "gagal create tabel";<br>
+}<br>
+<br>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/database_3.jpeg" width="100%" /><br>
+<br>
+<p>
+Jika berhasil, kita akan lanjut ke tutorial berikutnya yaitu insert data ke dalam tabel
+</p>
+<br>
+<br>

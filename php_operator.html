@@ -1,0 +1,133 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+Dalam PHP ada beberapa operator:<br>
+- Arithmetic operator<br>
+- Comparison operator<br>
+- Increment/Decrement operator<br>
+- Logical operator<br>
+- String operator<br>
+<br>
+<b>Arithmetic Operator</b><br>
+Untuk melakukan operasi aritmatika penjumlahan, pengurangan, perkalian, pembagian, modulus/sisa bagi.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = 10;<br>
+$y = 3;<br>
+<br>
+echo ($x + $y)."&lt;br&gt;";<br>
+echo ($x - $y)."&lt;br&gt;";<br>
+echo ($x * $y)."&lt;br&gt;";<br>
+echo ($x / $y)."&lt;br&gt;";<br>
+echo ($x % $y)."&lt;br&gt;";<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_operator_1.png" width="100%" /><br>
+<br>
+<br>
+<b>Comparison Operator</b><br>
+Untuk melakukan operasi perbandingan.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = 10;<br>
+$y = 3;<br>
+<br>
+echo ($x == $y)."&lt;br&gt;";<br>
+echo ($x === $y)."&lt;br&gt;";<br>
+echo ($x != $y)."&lt;br&gt;";<br>
+echo ($x &lt;&gt; $y)."&lt;br&gt;";<br>
+echo ($x !== $y)."&lt;br&gt;";<br>
+echo ($x &gt; $y)."&lt;br&gt;";<br>
+echo ($x &lt; $y)."&lt;br&gt;";<br>
+echo ($x &gt;= $y)."&lt;br&gt;";<br>
+echo ($x &lt;= $y)."&lt;br&gt;";<br>
+<br>
+?>
+</div>
+Keterangan:<br>
+0 / kosong = false<br>
+1 = true<br>
+<br>
+Hasilnya:<br>
+<img src="img/php_operator_2.png" width="100%" /><br>
+<br>
+<br>
+<b>Increment/Decrement Operator</b><br>
+Untuk melakukan operasi peningkatan atau penurunan bilangan.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = 10;<br>
+<br>
+echo (++$x)."&lt;br&gt;";<br>
+echo ($x++)."&lt;br&gt;";<br>
+echo ($x)."&lt;br&gt;";<br>
+echo (--$x)."&lt;br&gt;";<br>
+echo ($x--)."&lt;br&gt;";<br>
+echo ($x)."&lt;br&gt;";<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_operator_3.png" width="100%" /><br>
+<br>
+<br>
+<b>Logical Operator</b><br>
+Untuk melakukan operasi logika.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$x = true;<br>
+$y = true;<br>
+$z = false;<br>
+<br>
+echo ($x and $y)."&lt;br&gt;";<br>
+echo ($x or $y)."&lt;br&gt;";<br>
+echo ($x xor $y)."&lt;br&gt;";<br>
+echo ($x &amp;&amp; $z)."&lt;br&gt;";<br>
+echo ($x || $z)."&lt;br&gt;";<br>
+echo (!$y)."&lt;br&gt;";<br>
+<br>
+?>
+</div>
+Keterangan:<br>
+0 / kosong = false<br>
+1 = true<br>
+<br>
+Hasilnya:<br>
+<img src="img/php_operator_4.png" width="100%" /><br>
+<br>
+<br>
+<b>String Operator</b><br>
+Untuk menambah string dengan " . " atau " .= "<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$namadepan = "Belajar";<br>
+$namabelakang = "PHP";<br>
+<br>
+echo $namadepan." ".$namabelakang."&lt;br&gt;";<br>
+<br>
+$namadepan .= $namabelakang;<br>
+echo $namadepan." ".$namabelakang;<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_operator_5.png" width="100%" /><br>
+<br>

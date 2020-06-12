@@ -1,0 +1,39 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+<p>
+Seperti biasa, silahkan copy dulu kode sebelumnya karena ini kelanjutan dari tutorial sebelumnya.
+</p>
+<p>
+Yang akan kita bahas sekarang adalah cara memasukkan data ke dalam tabel. Sama sebenarnya seperti penulisan kode sebelumnya. Kita gunakan <b>mysqli_query()</b> tinggal ubah isi query sqlnya saja.
+Mari kita coba sekarang.
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+<br>
+// KODE PRAKTIK SEBELUMNYA<br>
+// kode connection<br>
+// kode create database<br>
+// kode select database<br>
+// kode create tabel<br>
+<br>
+// input data ke dalam tabel<br>
+$sql = "INSERT INTO tbl_pegawai (nama, alamat) VALUES ('ANDI', 'ACEH'), ('BUDI', 'BANYUWANGI'), ('CICI', 'CIREBON', ('DONI', 'DENPASAR')";<br>
+if (mysqli_query($conn, $sql)) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "sukses insert data";<br>
+} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "gagal insert data";<br>
+}<br>
+<br>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/database_4.jpeg" width="100%" /><br>
+<br>
+<p>
+Jika berhasil, kita akan lanjut ke tutorial berikutnya yaitu menampilkan data yang ada di dalam tabel
+</p>
+<br>
+<br>

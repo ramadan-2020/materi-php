@@ -1,0 +1,69 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+Fungsi merupakan sebuah blok kode yang dibuat untuk menyederhanakan pengkodean<br>
+<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+function tulisPesan(){<br>
+echo "Hello World! Saya sedang belajar PHP";<br>
+}<br>
+<br>
+tulisPesan();<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_fungsi_1.png" width="100%" /><br>
+<br>
+<br>
+<b>Fungsi Dengan Argumen</b><br>
+Membuat fungsi dengan tambahan argumen.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+function tulisPesan($nama){<br>
+echo "Hello $nama! Saya sedang belajar PHP. &lt;br&gt;";<br>
+}<br>
+<br>
+tulisPesan("Ani");<br>
+tulisPesan("Budi");<br>
+tulisPesan("Cici");<br>
+tulisPesan("Doni");<br>
+tulisPesan("Eko");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_fungsi_2.png" width="100%" /><br>
+<br>
+<br>
+<b>Return (Pengembalian Nilai)</b><br>
+Fungsi ini dibuat untuk memproses suatu nilai dan mengembalikan hasilnya.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+function hitung($x, $y) {<br>
+    $z = $x + $y;<br>
+    return $z;<br>
+}<br>
+<br>
+echo "5 + 10 = " . hitung(5, 10) . "&lt;br&gt;";<br>
+echo "7 + 13 = " . hitung(7, 13) . "&lt;br&gt;";<br>
+echo "2 + 4 = " . hitung(2, 4);<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_fungsi_3.png" width="100%" /><br>
+<br>

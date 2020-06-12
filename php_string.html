@@ -1,0 +1,88 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+<b>Menghitung Panjang String</b><br>
+Untuk menghitung panjang string bisa kita gunakan <b>strlen</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+echo strlen("Hello World!")."&lt;br&gt;";<br>
+echo strlen("Belajar PHP Itu Mudah");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_string_1.png" width="100%" /><br>
+<br>
+<br>
+<b>Menghitung Jumlah Kata</b><br>
+Untuk menghitung jumlah kata pada suatu kalimat bisa kita gunakan <b>str_word_count</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+echo str_word_count("Hello World!")."&lt;br&gt;";<br>
+echo str_word_count("Belajar PHP Itu Mudah");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_string_2.png" width="100%" /><br>
+<br>
+<br>
+<b>Membalik Kata</b><br>
+Dalam PHP kita bisa membalik kata cukup dengan memanggil perintah <b>strrev</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+echo strrev("Hello World!")."&lt;br&gt;";<br>
+echo strrev("Belajar PHP Itu Mudah");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_string_3.png" width="100%" /><br>
+<br>
+<br>
+<b>Mencari Posisi Kata</b><br>
+Mencari kata dengan PHP bisa kita gunakan <b>strpos</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+echo strpos("Hello World!", "World")."&lt;br&gt;";<br>
+echo strpos("Belajar PHP Itu Mudah", "Itu");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_string_4.png" width="100%" /><br>
+<br>
+Keterangan: <br>
+Karakter pertama terhitung dari 0.
+<br>
+<br>
+<b>Replace Text</b><br>
+Mengganti text dalam string dengan <b>str_replace</b>.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+echo str_replace("World", "Dunia", "Hello World!")."&lt;br&gt;";<br>
+echo str_replace("Itu", "Sangat", "Belajar PHP Itu Mudah");<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_string_5.png" width="100%" /><br>
+<br>

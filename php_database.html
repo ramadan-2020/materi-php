@@ -1,0 +1,79 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+<p>
+Website ada 2 macam, statis (isi halamannya tetap) dan dinamis (isi halamannya bisa berubah-ubah). Untuk membuat halaman statis cukup dengan HTML dan CSS. Sedangkan untuk membuatnya dinamis, kita bisa menggunakan PHP dan biasanya dihubungkan dengan database.
+</p>
+<p>
+Pada tutorial kali ini akan kita bahas mengenai bagaimana menghubungkan php dengan database MySQL.
+</p>
+<p>
+Yang pertama kita butuhkan adalah webserver. Bagi yang smartphone-nya sudah dipasang webserver dan support mysql, silahkan bisa langsung dipraktikkan di smartphonenya. Bagi yang belum, bisa praktik di komputer dengan menginstal XAMPP.
+</p>
+<p>
+Saya anggap masalah server sudah siap. Lanjut menghubungkan php dengan mysql. Caranya seperti berikut:
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$hostname = "localhost";<br>
+$username = "root";<br>
+$password = "";<br>
+<br>
+// buat connection<br>
+$conn = mysqli_connect($hostname, $username, $password);<br>
+// Cek connection<br>
+if ($conn) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "Connection seccess";<br>
+}else{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;die("Connection failed: " . mysqli_connect_error());<br>
+}<br>
+<br>
+<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/database_1.jpeg" width="100%" /><br>
+<br>
+<p>
+Jika berhasil, sekarang kita lanjutkan membuat database. Perintah/query yang digunakan adalah <b>CREATE DATABASE nama_database</b> atau bisa ditambahkan IF NOT EXISTS artinya database akan dibuat jika belum pernah dibuat sebelumnya sehingga query-nya menjadi <b>CREATE DATABASE IF NOT EXISTS nama_database</b>. Untuk menjalankan query-nya dengan perintah <b>mysqli_query($connection, "query")</b>. Berikut kita praktikkan, tulis kode berikut di bawah kode connection.
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+<br>
+// kode connection<br>
+<br>
+// Create database<br>
+$sql = "CREATE DATABASE IF NOT EXISTS mydb";<br>
+if (mysqli_query($conn, $sql)) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "sukses create db";<br>
+} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "error create db";<br>
+}<br>
+<br>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/database_2.jpeg" width="100%" /><br>
+<br>
+<p>
+    Setelah database berhasil dibuat, kita perlu memilih database tersebut untuk digunakan pada program selanjutnya. Caranya seperti berikut:
+</p>
+<div style="background-color: #EEE; padding: 10px;">
+    <br>
+    // kode connection<br>
+    // kode create database<br>
+    <br>
+    // select database<br>
+    mysqli_select_db($conn, "mydb");<br>
+    <br>
+</div>
+<p>
+    Pada tutorial selanjutnya akan kita bahas cara membuat tabel, mengisi data pada tabel dan menampilkannya.
+</p>
+<br>
+<br>

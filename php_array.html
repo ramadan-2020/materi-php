@@ -1,0 +1,105 @@
+<style>
+*{
+   -webkit-user-select: none;
+}
+</style>
+
+Array merupakan variable spesial karena dalam satu variable tersebut dapat memiliki banyak nilai di dalamnya.<br>
+<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$alattulis = array("Buku", "Pensil", "Penggaris");<br>
+<br>
+echo "Saya punya " . $alattulis[0] . "&lt;br&gt;";<br>
+echo "Saya punya " . $alattulis[1] . "&lt;br&gt;";<br>
+echo "Saya punya " . $alattulis[2];<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_array_1.png" width="100%" /><br>
+<br>
+<br>
+<b>Membuat Array</b><br>
+Berikut cara membuat sebuah array.<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$alattulis = array();<br>
+<br>
+$alattulis[] = "Buku";<br>
+$alattulis[] = "Pensil";<br>
+$alattulis[] = "Penggaris";<br>
+<br>
+print_r($alattulis);<br>
+<br>
+echo "&lt;br&gt;";<br>
+<br>
+//Array lebih komplek<br>
+$tulis = array();<br>
+$tulis[] = "Buku";<br>
+$tulis[] = "Pensil";<br>
+$tulis[] = "Penggaris";<br>
+<br>
+$mandi = array();<br>
+$mandi[] = "Sabun";<br>
+$mandi[] = "Sikat";<br>
+$mandi[] = "Handuk";<br>
+<br>
+$alat = array();<br>
+$alat['tulis'] = $tulis;<br>
+$alat['mandi'] = $mandi;<br>
+
+print_r($alat);<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_array_2.png" width="100%" /><br>
+<br>
+<br>
+<b>Menghitung Panjang Array</b><br>
+Untuk menghitung panjang sebuah array menggunakan perintah count().<br>
+<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+$alattulis = array("Buku", "Pensil", "Penggaris");<br>
+<br>
+echo count($alattulis);<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_array_3.png" width="100%" /><br>
+<br>
+<br>
+<b>Menampilkan Array</b><br>
+Menampilkan array ada 2 cara yaitu dengan foreach seperti yang sudah dijelaskan di materi Loop dan menggunakan for.<br>
+<br>
+Contoh:<br>
+<div style="background-color: #EEE; padding: 10px;">
+&lt;?php <br>
+<br>
+//Menggunakan for<br>
+$alattulis = array("Buku", "Pensil", "Penggaris");<br>
+$panjang_arr = count($alattulis);<br>
+<br>
+for($i=0; $i&lt;$panjang_arr; $i++){<br>
+	echo $alattulis[$i]."&lt;br&gt;";<br>
+}<br>
+<br>
+?>
+</div>
+<br>
+Hasilnya:<br>
+<img src="img/php_array_4.png" width="100%" /><br>
+<br>
+<br>
